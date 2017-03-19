@@ -1,0 +1,14 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="วิทยาลัยเทคนิคเลย" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <Label text="แอพพลิเคชั่นใบลาออนไลน์" class="h2 text-center"/>
+        <Image src="res://logo" stretch="none" horizontalAlignment="center" />
+        <TextField id="stdCode" text="{{stdCode}}" hint="รหัสนักศึกษา" keyboardType="number" autocorrect="false" />
+        <TextField id="pwd" text="{{stdPwd}}" hint="รหัสประจำตัวประชาชน" secure="true" keyboardType="number" /> 
+        <Button text="เข้าระบบ" tap="doLogin" class="btn btn-primary btn-active"/>
+        <Label text="พัฒนาโดยแผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเลย" class="h5 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>

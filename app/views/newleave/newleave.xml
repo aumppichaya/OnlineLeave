@@ -1,0 +1,23 @@
+<Page loaded="pageLoaded">
+        <Page.actionBar>
+        <ActionBar title="สร้างใบลาใหม่" icon="" class="action-bar">
+            <ActionBar.actionItems>
+            <ActionItem text = "<<" tap="goBack"/>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+    <GridLayout rows="25,25,25,*,25,auto,25,*,auto" columns="*,*,auto">
+    
+    <Label text="หัวข้อ" row="0" col="0" />
+    <TextField row="1" colSpan="3"  />
+    <Label text="ประเภทการลา" row="2" col="0"  />
+        <Button text="ลากิจ" tap="doLogin" class="btn btn-primary btn-active" id="btnSave" row="3" col="1"  />
+        <Button text="ลาป่วย" tap="doLogin" class="btn btn-primary btn-active" id="btnSave" row="3" col="2"  />
+    <Label text="วันที่ลา" row="4" colSpan="3"  />
+    <DatePicker day="15" month="5" year="2015" verticalAlignment="center" horizontalAlignment="center" row="5" colSpan="3"  />
+    <Label text="รายละเอียด" row="6" colSpan="3"  />
+    <TextView  row="7" colSpan="3"  />
+   <Button text="บันทึก" tap="doLogin" class="btn btn-primary btn-active" id="btnSave" row="8" col="2"  />
+   <Button text="ถ่ายภาพเอกสารประกอบ" tap="doLogin" class="btn btn-primary btn-active" id="btnPhoto" row="8" col="0" />
+  </GridLayout>
+</Page>

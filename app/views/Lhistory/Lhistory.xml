@@ -1,0 +1,39 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="ประวัติการลา" icon="" class="action-bar">
+            <ActionBar.actionItems>
+            <ActionItem text = "<<" tap="goBack"/>
+            <ActionItem text = "+" tap="addLeave"/>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+     
+        <GridLayout rows="auto,auto,auto,auto,auto,*" columns="auto,*">
+             <Label text="ข้อมูลนักเรียน - นักศึกษา" class="h3 text-center" row="0" colSpan="2" />
+
+            <Label text="{{stdCode}}" row="1" col="0"/>
+             <Label text="{{stdName}}" row="1" col="1"/>
+
+            <Label text="ชั้นเรียน/กลุ่มเรียน" row="2" col="0"/>
+            <Label text="{{stdClass}}" row="2" col="1"/>
+
+            <Label text="ครูที่ปรึกษา" row="3" col="0"/>
+            <Label text="{{stdTeacher}}" row="3" col="1"/>
+
+            <Label text="ประวัติการลา" class="h3 text-center" row="4" colSpan="2" />
+           
+            <ListView items="{{ leaveList }}" row="5" colSpan="2">
+            <ListView.itemTemplate>
+            <GridLayout columns="60,*,*">
+                    <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" col="0"/>
+                    <Label text="{{ date }}" horizontalAlignment="left" verticalAlignment="center" col="1"/>
+                    <Label text="{{ status }}" horizontalAlignment="left" verticalAlignment="center" col="2"/>
+                </GridLayout>
+                
+            </ListView.itemTemplate>
+            </ListView>
+        </GridLayout>
+        
+
+
+</Page>
